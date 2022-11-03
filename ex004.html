@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefone e e-mail</title>
+</head>
+<body>
+
+    <h1>Inscrição - Curso de Psicologia</h1>
+    <form action="../cadastro.js" method="post" autocomplete="on"></form>
+    
+    <fieldset>
+        <legend>Dados pessoais</legend>       
+        <p>
+            <label for="namex">Nome Completo: </label>
+            <input type="text" name="name" id="namex" required autocomplete="name" minlength="5" maxlength="40">
+        </p>
+        <p>
+            <label for="emailx" >Digite seu email: </label>
+            <input type="email" name="email" id="emailx" required autocomplete="email">
+        </p>
+        <p>
+            <label for="telx">Digite seu telefone: </label>
+            <input type="tel" name="tel" id="telx" required autocomplete="tel" placeholder="(  ) xxxx-xxxx">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </fieldset>
+    
+</body>
+</html>
