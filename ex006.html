@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolhendo a cor</title>
+</head>
+<body>
+
+    <form action="../cadastro.js" method="post">
+
+        <fieldset>
+            <legend>Cores de Referência</legend>
+            
+            <div>
+                <label for="colo11">Cor 01 <input type="color" name="color" id="cor1"></label>
+                <label for="color2">Cor 02 <input type="color" name="color" id="cor1"></label>
+                <label for="color3">Cor 03 <input type="color" name="color" id="cor1"></label>
+                <label for="color4">Cor 04 <input type="color" name="color" id="cor1"></label>
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Imagem de Referência (opcional)</legend>
+
+            <div>
+                <label for="img">Imagem <input type="file" name="img" id="img"></label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pesquisa de Satisfação</legend>
+
+            <div>
+                <label for="satisf">Qual seu grau de satisfação com o serviço?</label>
+                <input type="range" name="satisf" id="satisf" min="1" max="10" value="1">
+            </div>
+        </fieldset>
+
+            <div>
+                <input type="submit" value="Enviar referências">
+                <input type="reset" value="Limpar seleções">
+            </div>
+    </form>
+    
+</body>
+</html>
