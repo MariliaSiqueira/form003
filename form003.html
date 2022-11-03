@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <p>
+            <label for="nomex">Nome: </label>
+            <input type="text" name="nome" id="nomex" required maxlength="40" placeholder="Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="mediax">Média das Notas</label>
+            <input type="number" name="media" id="mediax" required minlength="0" maxlength="10" placeholder="Digite uma nota de 0 a 10" size="20" step="0.5" max="10">
+        </p>
+        <p>
+            <label for="mesx">Período Letivo</label>
+            <input type="month" name="mes" id="mesx" required value="2022-11">
+        </p>
+        <p>
+            <label for="datax">Data</label>
+            <input type="date" name="data" id="datax" value="2022-11-03">
+        </p>
+        <p>
+            <label for="horax">Hora da Prova</label>
+        <input type="time" name="hora" id="horax" size="30" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+
+
+    
+</body>
+</html>
